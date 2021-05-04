@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.productController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="60.0" prefWidth="326.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                        <Label fx:id="productName" alignment="CENTER" prefHeight="30.0" prefWidth="321.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="143.0" layoutY="20.0" prefHeight="159.0" prefWidth="181.0">
+         <children>
+                  <Label fx:id="productID" prefHeight="20.0" prefWidth="169.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Label>
+                  <Label fx:id="productPrice" prefHeight="20.0" prefWidth="169.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Label>
+                  <Label fx:id="productLocation" prefHeight="20.0" prefWidth="169.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Label>
+                  <Label fx:id="productStock" prefHeight="20.0" prefWidth="169.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Label>
+         </children>
+         <padding>
+            <Insets top="45.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="42.0" prefHeight="159.0" prefWidth="119.0">
+         <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID:" wrappingWidth="68.701171875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Location:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Quantity:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+         </children></VBox>
+      <VBox alignment="CENTER" layoutY="180.0" prefHeight="60.0" prefWidth="325.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="328.0">
+                     <children>
+                        <Button fx:id="editProduct" layoutX="122.0" layoutY="191.0" mnemonicParsing="false" onAction="#editProductOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #7445bb;" text="EDIT DETAILS" textFill="WHITE" />
+                     </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="product-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.editOwnDetailsController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="248.0" style="-fx-background-color: #212121;">
+         <children>
+            <Button fx:id="viewProducts" alignment="TOP_LEFT" layoutX="-1.0" layoutY="261.0" mnemonicParsing="false" onAction="#viewProductsOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-color: #212121;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="146.99998474121094" layoutX="100.0" layoutY="261.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="145.99998474121094" layoutX="101.0" layoutY="300.0" startX="-100.0" stroke="#fffdfd" />
+            <Button fx:id="editDetails" alignment="TOP_LEFT" layoutX="-1.0" layoutY="301.0" mnemonicParsing="false" onAction="#editDetailsOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-color: #212121;" text="Edit Details" textFill="#fffdfd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="145.99998474121094" layoutX="101.0" layoutY="339.0" startX="-100.0" stroke="WHITE" />
+            <Button fx:id="logout" alignment="TOP_LEFT" layoutY="340.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-color: #212121;" text="Logout" textFill="#fffdfd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="145.99998474121094" layoutX="100.0" layoutY="380.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="248.0" prefHeight="600.0" prefWidth="758.0" style="-fx-background-color: #303030;" />
+      <VBox layoutX="250.0" layoutY="11.0" prefHeight="572.0" prefWidth="752.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="248.0" layoutY="57.0" prefHeight="581.0" prefWidth="732.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="572.0" prefWidth="744.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text layoutX="237.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit User Details">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="newPassword" layoutX="86.0" layoutY="313.0" prefHeight="31.0" prefWidth="329.0" />
+                        <Text layoutX="86.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password:" wrappingWidth="132.6455078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="88.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Username:" wrappingWidth="132.6455078125">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="updateUser" layoutX="520.0" layoutY="230.0" mnemonicParsing="false" onAction="#updateUserOnAction" style="-fx-background-color: #7445bb;" text="Update Username" textFill="WHITE" />
+                        <Button fx:id="updatePassword" layoutX="520.0" layoutY="313.0" mnemonicParsing="false" onAction="#updatePasswordOnAction" style="-fx-background-color: #7445bb;" text="Update Password" textFill="WHITE" />
+                        <TextField fx:id="newUsername" layoutX="88.0" layoutY="230.0" prefHeight="31.0" prefWidth="329.0" />
+                        <Label fx:id="updateSuccess" layoutX="269.0" layoutY="382.0" prefHeight="20.0" prefWidth="194.0" textFill="#76a454">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
